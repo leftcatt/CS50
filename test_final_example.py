@@ -9,7 +9,7 @@ data.drop("id", axis=1, inplace=True)
 
 print(data.head())
 
-my_cluster = KMeans(n_clusters=5)
+my_cluster = KMeans(n_clusters=3)
 my_cluster.fit(data)
 y_predicted = my_cluster.predict(data)
 
