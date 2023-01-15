@@ -12,6 +12,14 @@ function numberMultiplayer(number){
     console.log(number*5)
 }
 
+
+
 console.log(name)
 console.log(x + y)
 numberMultiplayer(67)
+
+
+
+
+
+

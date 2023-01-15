@@ -2,8 +2,13 @@
 //function: fullName
 //console.log
 
-function fullName(name, lastName) {
-    console.log(name + " " + lastName);
+name = "Giorgi"
+lastname = "Aroshidze"
+
+const fullName = (name1, lastName1) => {
+    return(name1 + " " + lastName1);
 }
 
-fullName("Giorgi", "Aroshidze");
+const fullname = fullName(name, lastname);
+
+console.log(fullname)

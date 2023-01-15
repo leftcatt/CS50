@@ -11,7 +11,7 @@ function subtract(a, b){
 
 }
 
-function multiply(a, b){
+const multiply = (a, b) => {
     console.log(a * b);
 }
 
