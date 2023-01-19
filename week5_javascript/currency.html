@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Currency Exchange</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const url = '"https://api.apilayer.com/exchangerates_data/convert?to=to&from=from&amount=amount"'
+            fetch(url, {
+                method: 'GET',
+                headers: {
+                    "X-Auth-Token": "lUT0uWN0mXDJMAH5RG1C7AnqWEuvHIuR"
+                }
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                })
+            });
+
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

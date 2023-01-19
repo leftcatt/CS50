@@ -11,4 +11,11 @@ function count() {
 
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('button').onclick = count;
+
+    /* This creates an interval, 
+    where every so often it runs a particular function. 
+    This particular interval will run the "count" function, 
+    after every second. */
+
+    setInterval(count, 1000);
 });
