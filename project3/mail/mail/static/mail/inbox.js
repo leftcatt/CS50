@@ -33,27 +33,3 @@ function load_mailbox(mailbox) {
   // Show the mailbox name
   document.querySelector('#emails-view').innerHTML = `<h3>${mailbox.charAt(0).toUpperCase() + mailbox.slice(1)}</h3>`;
 }
-function send_email() {
-
-  
-  
-  
-  fetch ('/emails', {
-    method: 'POST',
-    body: JSON.stringify({
-      recipients: document.querySelector('#compose-recipients').value,
-      subject: document.querySelector('#compose-subject').value,
-      body: document.querySelector('#compose-body').value
-      
-    })
-    .then(response => response.json())
-    .then(result => {
-      console.log(result);
-    })
-
-  })
-  localStorage.clear();
-  load_mailbox('#emails-view');
-  return false;
-;}
-
